@@ -7,7 +7,7 @@ def idecimal2binary(number: int):
     temp: list = []
     while number >= 1:
         temp.insert(0, number % 2)
-        number = number // 2
+        number //= 2
     return "".join(str(i) for i in temp)
 
 
@@ -30,7 +30,7 @@ def fdecimal2binary(r: float):
         if r_1 == 0:
             break
         else:
-            k = k + 1
+            k += 1
             if (2 * r_1) >= 1:
                 d_k = 1
             else:
