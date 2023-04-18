@@ -1,24 +1,115 @@
 \section{Pregunta N$^{\circ}$2\qquad Khalid Zaid Izquierdo Ayllón}
 
 \begin{frame}
+	\frametitle{
+		El estándar IEEE para aritmética en punto flotante (IEEE $754$)
+	}
+	Este estándar define \alert{formatos de aritmética},
+	\alert{formatos de intercambio}, \alert{reglas de redondeo},
+	\alert{operaciones} y \alert{manejo de excepciones}.
+	Un formato de punto flotante está especificado por una \alert{base}
+	$\beta$, una \alert{precisión} $t$ y un \alert{rango de exponente}
+	desde $L$ hasta $U$, donde $L=1-U$.
+	% Los números de punto flotante son tipos de datos que aproximan
+	% números reales.
+	Dado un $x\in\mathbb{R}$ en \alert{notación científica normalizada}
+	\begin{equation*}
+		x=
+		{\left(-1\right)}^{s}\cdot
+		{\left(d_{1},\dotsc\right)}_{2}
+		\times
+		2^{e},\quad
+		d_{1}\neq 0.
+	\end{equation*}
+	La representación de $x$ en formato de punto flotante es
+	\begin{equation*}
+		\operatorname{fl}\left(x\right)=
+		{\left(-1\right)}^{s}\cdot
+		{\left(d_{1},\dotsc,d_{23},\widetilde{d}_{24}\right)}_{2}
+		\times
+		2^{e}.
+	\end{equation*}
+	% El estándar IEEE de números de punto flotante es un conjunto de
+	% convenciones para la representación por computadora y procesamiento
+	% de números de punto flotante.
+	Este estándar técnico define tres formatos para la implementación
+	de los números de punto flotante en la computadora.
+	\begin{multicols}{3}
+		\begin{itemize}
+			\item Precisión simple
+
+			      \begin{equation*}
+				      \mathbb{F}\left(2,24,-125,128\right).
+			      \end{equation*}
+
+			\item Precisión doble
+
+			      \begin{equation*}
+				      \mathbb{F}\left(2,53,-1021,1024\right).
+			      \end{equation*}
+
+			\item Precisión cuádruple
+
+			      \begin{equation*}
+				      \mathbb{F}\left(2,114,-16381,16384\right).
+			      \end{equation*}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}
 	\begin{enumerate}\setcounter{enumi}{1}
 		\item
 
-		      Represente en el estándar IEEE $754$ de simple precisión el
-		      valor de $10.25$ y $6.75$.
-		      Luego, realice la suma de los números representados en IEEE
+		      Represente en el estándar IEEE $754$ de precisión simple
+		      los valores de $10.25$ y $6.75$.
+		      Luego, realice la suma de estos números representados en IEEE
 		      $754$.
 		      Muestre todos los pasos.
 	\end{enumerate}
 
 	\begin{solution}
-		.
+		\begin{enumerate}[a)]
+			\item
+
+			      Sea $10.25={01000001001001000000000000000000}_{2}$.
+
+			\item
+
+			      Sea $6.75={01000000110110000000000000000000}_{2}$.
+
+			\item
+
+			      Sea $10.25+6.75=17.00={01000001100010000000000000000000}_{2}$.
+
+		\end{enumerate}
 	\end{solution}
 \end{frame}
 
-
 \begin{frame}
 	\begin{solution}
-		.
+		\begin{table}[ht!]
+			\begin{tabular}{c|c|c|c}
+				        & Signo & Exponente  & Mantisa                   \\
+				\hline
+				Valor   & $+1$  & $2^{3}$    & $1.28125$                 \\
+				\hline
+				Binario & $0$   & $10000010$ & $01001000000000000000000$
+			\end{tabular}\qquad
+			\begin{tabular}{c|c|c|c}
+				        & Signo & Exponente  & Mantisa                   \\
+				\hline
+				Valor   & $+1$  & $2^{3}$    & $1.28125$                 \\
+				\hline
+				Binario & $0$   & $10000010$ & $01001000000000000000000$
+			\end{tabular}\qquad
+			\begin{tabular}{c|c|c|c}
+				        & Signo & Exponente  & Mantisa                   \\
+				\hline
+				Valor   & $+1$  & $2^{3}$    & $1.28125$                 \\
+				\hline
+				Binario & $0$   & $10000010$ & $01001000000000000000000$
+			\end{tabular}
+		\end{table}
 	\end{solution}
 \end{frame}
