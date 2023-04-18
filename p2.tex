@@ -30,8 +30,8 @@
 		2^{e}.
 	\end{equation*}
 	% El estándar IEEE de números de punto flotante es un conjunto de
-	% convenciones para la representación por computadora y procesamiento
-	% de números de punto flotante.
+	% convenciones para la representación por computadora y
+	% procesamiento de números de punto flotante.
 	Este estándar técnico define tres formatos para la implementación
 	de los números de punto flotante en la computadora.
 	\begin{multicols}{3}
@@ -63,8 +63,8 @@
 
 		      Represente en el estándar IEEE $754$ de precisión simple
 		      los valores de $10.25$ y $6.75$.
-		      Luego, realice la suma de estos números representados en IEEE
-		      $754$.
+		      Luego, realice la suma de estos números representados en
+		      IEEE $754$.
 		      Muestre todos los pasos.
 	\end{enumerate}
 
@@ -72,16 +72,65 @@
 		\begin{enumerate}[a)]
 			\item
 
-			      Sea $10.25={01000001001001000000000000000000}_{2}$.
+			      Sea
+			      \begin{math}
+				      10.25=
+				      {\left(01000001001001000000000000000000\right)}_{2}
+			      \end{math}.
+
+			      Número positivo: $s=0$.
+
+			      Se tiene que
+			      \begin{math}
+				      10=
+				      {\left(1010\right)}_{2}
+			      \end{math}
+			      y
+			      \begin{math}
+				      0.25=
+				      {\left(0.01\right)}_{2}.
+			      \end{math}
 
 			\item
 
-			      Sea $6.75={01000000110110000000000000000000}_{2}$.
+			      Sea
+			      \begin{math}
+				      6.75=
+				      {\left(01000000110110000000000000000000\right)}_{2}
+			      \end{math}.
+
+			      Número positivo: $s=0$.
+
+			      Se tiene que
+			      \begin{math}
+				      6=
+				      {\left(110\right)}_{2}
+			      \end{math}
+			      y
+			      \begin{math}
+				      0.75=
+				      {\left(0.11\right)}_{2}
+			      \end{math}.
 
 			\item
 
-			      Sea $10.25+6.75=17.00={01000001100010000000000000000000}_{2}$.
+			      Sea
+			      \begin{math}
+				      10.25+6.75=
+				      17.00=
+				      {\left(01000001100010000000000000000000\right)}_{2}
+			      \end{math}.
 
+			      Número positivo: $s=0$.
+
+			      Se tiene que
+			      \begin{math}
+				      6={\left(10001\right)}_{2}
+			      \end{math}
+			      y
+			      \begin{math}
+				      0.00={\left(0.00\right)}_{2}
+			      \end{math}.
 		\end{enumerate}
 	\end{solution}
 \end{frame}
