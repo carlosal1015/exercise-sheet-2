@@ -21,21 +21,10 @@
 		      a pesar que funciona en aritmética infinita.
 	\end{enumerate}
 	\begin{solution}
-		.
-	\end{solution}
-\end{frame}
-
-\begin{frame}
-	\begin{solution}
-		Si perturbamos la sucesión $I_{k}$ por
+		La fórmula es correcta porque
 		\begin{math}
-			\widehat{I}_{k}=
-			I_{k}+
-			\varepsilon_{n}
-		\end{math},
-		entonces
-		\begin{align*}
-			I_{\alert{0}}   & =
+			\displaystyle
+			I_{\alert{0}}=
 			\int\limits_{0}^{1}
 			\frac{x^{\alert{0}}}{5+x}
 			\dl x=
@@ -53,20 +42,51 @@
 			=
 			\ln\left(6\right)-
 			\ln\left(5\right)=
-			\ln\left(\frac{6}{5}\right). \\
-			I_{\alert{1}}   & =
+			\ln\left(\frac{6}{5}\right)
+		\end{math}.
+		Además,
+		\begin{align*}
+			I_{\alert{k}} & =
 			\int\limits_{0}^{1}
-			\frac{x^{\alert{1}}}{5+x}
-			\dl x=                       \\
-			\vdots          & =
-			\vdots                       \\
-			I_{\alert{k-1}} & =
+			\frac{x^{\alert{k}}}{5+x}
+			\dl x=
+			\int\limits_{0}^{1}
+			x^{k-1}
+			\left(\alert{\frac{x}{5+x}}\right)
+			\dl x=
+			\int\limits_{0}^{1}
+			x^{k-1}
+			\left(\alert{1-\frac{5}{5+x}}\right)
+			\dl x=
+			\int\limits_{0}^{1}
+			\left(x^{k-1}-5\frac{x^{k-1}}{5+x}\right)
+			\dl x             \\
+			I_{\alert{k}} & =
+			\int\limits_{0}^{1}
+			x^{k-1}
+			\dl x-
+			5
 			\int\limits_{0}^{1}
 			\frac{x^{\alert{k-1}}}{5+x}
 			\dl x=
-			\int\limits_{0}^{1}
-			\frac{x^{k-1}}{5+x}
-			\dl x=
+			{
+			\frac{x^{k-1+1}}{k-1+1}
+			\Bigr|
+			}_{0}^{1}
+			-5I_{\alert{k-1}}=
+			\left(1-0\right)-5I_{k-1}.
 		\end{align*}
+	\end{solution}
+\end{frame}
+
+\begin{frame}
+	\begin{solution}
+		Si perturbamos la sucesión $I_{k}$ por
+		\begin{math}
+			\widehat{I}_{k}=
+			I_{k}+
+			\varepsilon_{n}
+		\end{math},
+		entonces
 	\end{solution}
 \end{frame}

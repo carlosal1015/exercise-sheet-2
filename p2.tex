@@ -69,13 +69,21 @@
 	\end{enumerate}
 
 	\begin{solution}
+
+		\begin{equation*}
+			x=
+			{\left(-1\right)}^{s}\times
+			{\left(1.f\right)}_{2}
+			\times
+			2^{e-127}
+		\end{equation*}
+
 		\begin{enumerate}[a)]
 			\item
 
 			      Sea
 			      \begin{math}
-				      10.25=
-				      {\left(01000001001001000000000000000000\right)}_{2}
+				      10.25\in\mathbb{F}\left(2,24,-125,128\right)
 			      \end{math}.
 
 			      Número positivo: $s=0$.
@@ -97,23 +105,28 @@
 			      \end{math}.
 
 			      Notación científica normalizada:
+			      \begin{math}
+				      {\left(-1\right)}^{0}\times
+				      \left(1.01001\right)_{2}
+				      \times 2^{3}
+			      \end{math}.
 
-			      El exponente es $e=$.
+			      El exponente es $e=3$.
 			      Entonces, el exponente sesgado es
 			      \begin{math}
 				      E=
-				      e+127=
+				      e+127=130
 			      \end{math}.
 
 			      La representación pedida es:
 
 			      \begin{table}[ht!]
 				      \begin{tabular}{c|c|c|c}
-					              & Signo & Exponente  & Mantisa                   \\
+					              & Signo & Exponente  & Mantisa                           \\
 					      \hline
-					      Valor   & $+1$  & $2^{3}$    & $1.28125$                 \\
+					      Valor   & $+1$  & $ 130 $    & $1.28125$                         \\
 					      \hline
-					      Binario & $0$   & $10000010$ & $01001000000000000000000$
+					      Binario & $0$   & $10000010$ & $\alert{01001}000000000000000000$
 				      \end{tabular}
 			      \end{table}
 		\end{enumerate}
@@ -127,8 +140,7 @@
 
 			      Sea
 			      \begin{math}
-				      6.75=
-				      {\left(01000000110110000000000000000000\right)}_{2}
+				      6.75\in\mathbb{F}\left(2,24,-125,128\right)
 			      \end{math}.
 
 			      Número positivo: $s=0$.
@@ -146,27 +158,32 @@
 			      Entonces,
 			      \begin{math}
 				      6.75=
-				      {\left(110.75\right)}_{2}
+				      {\left(110.11\right)}_{2}
 			      \end{math}.
 
 			      Notación científica normalizada:
+			      \begin{math}
+				      {\left(-1\right)}^{0}\times
+				      \left(1.1011\right)_{2}
+				      \times 2^{2}
+			      \end{math}
 
-			      El exponente es $e=$.
+			      El exponente es $e=2$.
 			      Entonces, el exponente sesgado es
 			      \begin{math}
 				      E=
-				      e+127=
+				      e+127=129
 			      \end{math}.
 
 			      La representación pedida es:
 
 			      \begin{table}[ht!]
 				      \begin{tabular}{c|c|c|c}
-					              & Signo & Exponente  & Mantisa                   \\
+					              & Signo & Exponente  & Mantisa                           \\
 					      \hline
-					      Valor   & $+1$  & $2^{3}$    & $1.28125$                 \\
+					      Valor   & $+1$  & $129$      & $1.6875$                          \\
 					      \hline
-					      Binario & $0$   & $10000010$ & $01001000000000000000000$
+					      Binario & $0$   & $10000001$ & $\alert{1011}0000000000000000000$
 				      \end{tabular}
 			      \end{table}
 		\end{enumerate}
@@ -179,9 +196,8 @@
 			\item
 			      Sea
 			      \begin{math}
-				      10.25+6.75=
-				      17.00=
-				      {\left(01000001100010000000000000000000\right)}_{2}
+				      \operatorname{fl}\left(10.25+6.75\right)=
+				      \operatorname{fl}\left(17.00\right)
 			      \end{math}.
 
 			      Número positivo: $s=0$.
@@ -197,28 +213,35 @@
 			      Entonces,
 			      \begin{math}
 				      17.00=
-				      {10001.00}_{2}
+				      {\left(10001.00\right)}_{2}
 			      \end{math}.
 
 			      Notación científica normalizada:
+			      \begin{math}
+				      {\left(-1\right)}^{0}\times
+				      \left(1.000100\right)_{2}
+				      \times 2^{4}
+			      \end{math}
 
-			      El exponente es $e=$.
+			      El exponente es $e=4$.
 			      Entonces, el exponente sesgado es
 			      \begin{math}
 				      E=
-				      e+127=
+				      e+127=131
 			      \end{math}.
 
 			      La representación pedida es:
 			      \begin{table}[ht!]
 				      \begin{tabular}{c|c|c|c}
-					              & Signo & Exponente  & Mantisa                   \\
+					              & Signo & Exponente  & Mantisa                           \\
 					      \hline
-					      Valor   & $+1$  & $2^{3}$    & $1.28125$                 \\
+					      Valor   & $+1$  & $131$      & $1.0625$                          \\
 					      \hline
-					      Binario & $0$   & $10000010$ & $01001000000000000000000$
+					      Binario & $0$   & $10000011$ & $\alert{000100}00000000000000000$
 				      \end{tabular}
 			      \end{table}
 		\end{enumerate}
 	\end{solution}
+
+	Otra forma es
 \end{frame}
