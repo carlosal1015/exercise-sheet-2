@@ -4,14 +4,12 @@
 	\begin{enumerate}\setcounter{enumi}{5}
 		\item
 
-		      Muestre que la siguiente sucesión
+		      Muestre que la sucesión
 
 		      \begin{equation*}
-			      I_{0}=
-			      \log\left(\frac{6}{5}\right),\quad
+			      I_{0}=\ln\left(\frac{6}{5}\right),\quad
 			      \forall k\in\mathbb{N}:
-			      I_{k}=
-			      \frac{1}{k}-5I_{k-1}
+			      I_{k}=\frac{1}{k}-5I_{k-1}
 		      \end{equation*}
 		      no es apropiada para aproximar la integral
 		      \begin{equation*}
@@ -24,5 +22,51 @@
 	\end{enumerate}
 	\begin{solution}
 		.
+	\end{solution}
+\end{frame}
+
+\begin{frame}
+	\begin{solution}
+		Si perturbamos la sucesión $I_{k}$ por
+		\begin{math}
+			\widehat{I}_{k}=
+			I_{k}+
+			\varepsilon_{n}
+		\end{math},
+		entonces
+		\begin{align*}
+			I_{\alert{0}}   & =
+			\int\limits_{0}^{1}
+			\frac{x^{\alert{0}}}{5+x}
+			\dl x=
+			\int\limits_{0}^{1}
+			\frac{1}{5+x}
+			\dl x=
+			\int\limits_{5}^{6}
+			\frac{1}{u}
+			\dl u
+			=
+			{
+			\ln(u)
+			\Bigr|
+			}_{5}^{6}
+			=
+			\ln\left(6\right)-
+			\ln\left(5\right)=
+			\ln\left(\frac{6}{5}\right). \\
+			I_{\alert{1}}   & =
+			\int\limits_{0}^{1}
+			\frac{x^{\alert{1}}}{5+x}
+			\dl x=                       \\
+			\vdots          & =
+			\vdots                       \\
+			I_{\alert{k-1}} & =
+			\int\limits_{0}^{1}
+			\frac{x^{\alert{k-1}}}{5+x}
+			\dl x=
+			\int\limits_{0}^{1}
+			\frac{x^{k-1}}{5+x}
+			\dl x=
+		\end{align*}
 	\end{solution}
 \end{frame}
