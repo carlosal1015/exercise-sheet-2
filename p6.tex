@@ -74,7 +74,8 @@
 			\Bigr|
 			}_{0}^{1}
 			-5I_{\alert{k-1}}=
-			\left(1-0\right)-5I_{k-1}.
+			\left(\frac{1^{k}}{k}-\frac{0^{k}}{k}\right)-5I_{k-1}=
+			\frac{1}{k}-5I_{k-1}.
 		\end{align*}
 	\end{solution}
 \end{frame}
@@ -85,8 +86,15 @@
 		\begin{math}
 			\widehat{I}_{k}=
 			I_{k}+
-			\varepsilon_{n}
+			\epsilon_{k}
 		\end{math},
 		entonces
+		\begin{align*}
+			\widehat{I}_{k+1} & =
+			\frac{1}{k+1}-5\left(I_{k}+\epsilon_{k}\right) \\
+			\widehat{I}_{k+1} & =
+			I_{k+1}+
+			\epsilon_{k+1}                                 \\
+		\end{align*}
 	\end{solution}
 \end{frame}

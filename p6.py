@@ -37,6 +37,6 @@ def table():
 
 
 if __name__ == "__main__":
-    # I(100)
+    I(100)
     # I_exact()
-    table()
+    # table()
