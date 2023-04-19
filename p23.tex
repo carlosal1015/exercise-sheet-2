@@ -4,43 +4,144 @@
 	\begin{enumerate}\setcounter{enumi}{22}
 		\item
 
-		      Dos kilos de plátanos y tres de peras cuestan S/$8,80$.
+		      Dos kilos de plátanos y tres de peras cuestan S/$8.80$.
 		      Cinco kilos de plátanos y cuatro de peras cuestan
-		      S/$16,40$.
+		      S/$16.40$.
 		      Determine el costo de kilo del plátano y de la pera según
 		      el siguiente requerimiento.
-		      \begin{enumerate}[a)]
-			      \item
 
-			            Modele el problema.
+		      \begin{multicols}{2}
+			      \begin{enumerate}[a)]
+				      \item
 
-			      \item
+				            Modele el problema.
 
-			            Determine la norma matricial de $A$ y $A^{-1}$.
+				      \item
 
-			      \item
+				            Determine la norma de $A$ y $A^{-1}$.
 
-			            Determine el condicionamiento de $A$.
+				      \item
 
-			      \item
+				            Determine el condicionamiento de $A$.
 
-			            Indique si está bien o mal condicionado.
-		      \end{enumerate}
+				      \item
+
+				            Indique si está bien o mal condicionado.
+			      \end{enumerate}
+		      \end{multicols}
 	\end{enumerate}
 	\begin{solution}
 
 		\begin{enumerate}[a)]
 			\item
 
-			      .
+			      Sean $x_{1}$ el \alert{costo por kilo de plátanos} y
+			      $x_{2}$ el \alert{costo por kilo de peras}.
+			      Entonces, podemos escribir
+			      \begin{equation*}
+				      \systeme{
+				      2x_{1}+3x_{2}=8.80,
+				      5x_{1}+4x_{2}=16.40
+				      }\iff
+				      \underbrace{
+					      \begin{bmatrix}
+						      2 & 3 \\
+						      5 & 4
+					      \end{bmatrix}
+				      }_{A}
+				      \underbrace{
+					      \begin{bmatrix}
+						      x_{1} \\
+						      x_{2}
+					      \end{bmatrix}
+				      }_{x}=
+				      \underbrace{
+					      \begin{bmatrix}
+						      8.80 \\
+						      16.40
+					      \end{bmatrix}
+				      }_{b}\iff
+				      \begin{bmatrix}
+					      x_{1} \\
+					      x_{2}
+				      \end{bmatrix}=
+				      \underbrace{
+					      \begin{bmatrix}
+						      -0.571 & 0.428  \\
+						      0.714  & -0.285
+					      \end{bmatrix}
+				      }_{A^{-1}}
+				      \begin{bmatrix}
+					      8.80 \\
+					      16.40
+				      \end{bmatrix}=
+				      \begin{bmatrix}
+					      2.457 \\
+					      1.028
+				      \end{bmatrix}.
+			      \end{equation*}
 
+			      \begin{itemize}
+				      \item
+
+				            La primera ecuación representa el costo de dos
+				            kilos de plátanos y tres kilos de peras.
+
+				      \item
+				            La segunda ecuación representa el costo de cinco
+				            kilos de plátanos y cuatro kilos de peras.
+
+			      \end{itemize}
+
+			      La solución de es $x_{1}=2.457$ y $x_{2}=1.028$, lo que
+			      significa que el costo por kilo de plátanos es S/$2.46$ y
+			      el costo por kilo de peras es S/$1.03$.
+		\end{enumerate}
+	\end{solution}
+\end{frame}
+
+\begin{frame}
+	\begin{solution}
+		\begin{enumerate}[b)]
 			\item
 
-			      .
+			      Las normas de $A$ y $A^{-1}$ son
 
+			      \begin{align*}
+				      {\left\|A\right\|}_{\infty}      & =
+				      \max\limits_{1\leq i\leq n}
+				      \sum_{j=1}^{n}\left|A_{ij}\right|=   \\
+				      {\left\|A^{-1}\right\|}_{\infty} & =
+				      \max\limits_{1\leq i\leq n}
+				      \sum_{j=1}^{n}\left|A^{-1}_{ij}\right|=
+				      0.
+			      \end{align*}
+		\end{enumerate}
+	\end{solution}
+\end{frame}
+
+\begin{frame}
+	\begin{solution}
+		\begin{enumerate}[c)]
 			\item
 
-			      .
+			      El condicionamiento de $A$ es
+			      \begin{equation*}
+				      \kappa\left(A\right)=
+				      {\left\|A\right\|}_{\infty}\cdot
+				      {\left\|A^{-1}\right\|}_{\infty}=.
+			      \end{equation*}
+
+		\end{enumerate}
+	\end{solution}
+\end{frame}
+
+\begin{frame}
+	\begin{solution}
+		\begin{enumerate}[d)]
+			\item
+
+			      El problema est.
 		\end{enumerate}
 	\end{solution}
 \end{frame}
