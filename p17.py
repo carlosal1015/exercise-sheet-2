@@ -5,6 +5,7 @@ import numpy.linalg as lg
 
 A_n = lambda n: np.array(object=[[1, 2], [2, 4 + 1 / np.square(n)]])
 b_n = lambda n: np.array(object=[[1, 2 - 1 / np.square(n)]])
+x_tilde = np.array([[1, 0]])
 x_n = lambda n: lg.solve(a=A_n(n), b=b_n(n).T)
 r_n = lambda n: A_n(n) @ x_n(n) - b_n(n)
 

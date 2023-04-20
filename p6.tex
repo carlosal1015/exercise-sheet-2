@@ -82,6 +82,23 @@
 
 \begin{frame}
 	\begin{solution}
+		De esto notamos que la sucesión
+		\begin{math}
+			\left\{I_{k}\right\}_{n\in\mathbb{N}\cup\{0\}}
+		\end{math}
+		es \alert{divergente}, es decir,
+		\begin{align*}
+			I_{1} & =
+			\frac{1}{1}-
+			5I_{0}=
+			1-
+			5\ln\left(\frac{6}{5}\right).
+			I_{2} & =
+			\frac{1}{2}-
+			5I_{1}=
+			\frac{1}{2}-
+			5\left(1-5\ln\left(\frac{6}{5}\right)\right).
+		\end{align*}
 		Si perturbamos la sucesión $I_{k}$ por
 		\begin{math}
 			\widehat{I}_{k}=
@@ -98,3 +115,6 @@
 		\end{align*}
 	\end{solution}
 \end{frame}
+
+% Tomar como sugerencia e_{k}=|I_{k}-I_{k-1}|.
+% Resuelve la recurrencia.
