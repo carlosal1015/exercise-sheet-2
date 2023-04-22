@@ -38,14 +38,72 @@
 	\begin{solution}
 		\begin{enumerate}[a)]
 			\item
-
-			      .
+                \begin{math}
+			      ||A||_{\infty}=
+			      \max\limits_{1\leq i\leq 2}
+			      \left
+			      \sum_{j=1}^{2}|a_{ij}|
+			      \right
+                    \\ ||A||_{\infty}=\max {(|1|+|2|,|3|+|4|)}=7\\
+		          A^{-1}=
+                    \begin{matrix}
+                    \begin{pmatrix}
+                            -2 & 1\\
+                            1.5 & -0.5
+                         \end{pmatrix}   
+                    \end{matrix}
+                \\ ||A^{-1}||_{\infty}=\max {(|-2|+|1|,|1.5|+|-0.5|)}=3\\
+                Cond(A)=7*3=21
+                \end{math}
 
 			\item
+                \begin{math}
+                b
+                    =
+                    \begin{pmatrix}
+				      1  \\
+				      -1 
+			      \end{pmatrix}\\
+			      $Ax$=
+			      \begin{pmatrix}
+				      1 & 2 \\
+				      3 & 4
+			      \end{pmatrix}
+                     \begin{pmatrix}
+				      x_{1}  \\
+				      x_{2} 
+			      \end{pmatrix}.
+                    =
+                    \begin{pmatrix}
+				      1  \\
+				      -1 
+			      \end{pmatrix}\\
+                    \begin{pmatrix}
+				      x_{1}  \\
+				      x_{2} 
+			      \end{pmatrix}
+                     =
+                     \begin{pmatrix}
+				      -3  \\
+				      2 
+			      \end{pmatrix}
+		      \\
+            b+Δb =
+                    \begin{pmatrix}
+				      1.1  \\
+				      -1 
+			      \end{pmatrix}\\
+            x+Δx =
+                    \begin{pmatrix}
+				      -3.2 \\
+				      2.15 
+			      \end{pmatrix}\\
 
-			      .
-
-			\item
+             \frac{||Δb||_{\infty}} {||b||_{\infty}} =0.1
+              \frac{||Δx||_{\infty}} {||x||_{\infty}} =0.06
+              \\cond(A)> \frac{0.06}{0.1}=0.6
+			\end{math}
+   \item
 
 			      .
 		\end{enumerate}

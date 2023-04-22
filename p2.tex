@@ -243,5 +243,28 @@
 		\end{enumerate}
 	\end{solution}
 
-	Otra forma es
+	Otra forma es sacar de su forma normalizada el número 6.75, el cual se modificaría de la siguiente forma:
+
+    \begin{math}
+        6.75=0.11011\times2^3
+    \end{math}
+
+    Esto para que esté expresado en el mismo decimal que $10.25$, luego sumaremos ambos números binarios como una suma normal.
+
+    \begin{table}[ht!]
+      \begin{tabular}{>{$}c<{$} >{$}c<{$}}
+            & 1.01001  \\
+          + & 0.11011  \\
+          \hline
+            & 10.00100
+      \end{tabular}
+  \end{table}
+  Cuyo resultado sería $10.00100\times2^3$, entonces al normalizar nos quedaría:
+  \begin{math}
+      1.000100\times2^4
+  \end{math}.
+  
+  Y dado que ambos números eran positivos, el resultado también nos dará un número positivo, entonces su el bit representativo del signo sería $0$.
+
+  El exponente es $e=4$. Entonces, el exponente sesgado es $E=e+127=131$. Y la representación quedaría tal cual se muestra en el cuadro de arriba.
 \end{frame}
