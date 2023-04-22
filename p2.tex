@@ -243,4 +243,34 @@
 			      \end{table}
 		\end{enumerate}
 	\end{solution}
+
+	Otra forma es obtener la forma normalizada del número $6.75$:
+	\begin{math}
+		0.11011\times2^{3}
+	\end{math}.
+
+	Para que esté expresado en el mismo decimal que $10.25$, luego
+	sumaremos ambos números binarios.
+
+	\begin{table}[ht!]
+		\begin{tabular}{>{$}c<{$} >{$}c<{$}}
+			  & 1.01001  \\
+			+ & 0.11011  \\
+			\hline
+			  & 10.00100
+		\end{tabular}
+	\end{table}
+	El resultado sería $10.00100\times2^{3}$, y al normalizar
+	nos quedaría
+	\begin{math}
+		\alert{1.000100\times2^{4}}
+	\end{math}.
+
+	Dado que ambos números eran positivos, el resultado es positivo,
+	entonces el bit representativo del signo es $0$.
+
+	El exponente es $e=4$.
+	Entonces, el exponente sesgado es $E=e+127=131$.
+	Y la representación quedaría tal cual se muestra en el cuadro de
+	arriba.
 \end{frame}

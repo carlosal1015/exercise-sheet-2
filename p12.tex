@@ -32,22 +32,104 @@
 			            $\Delta A$ para el cual este número de condición se
 			            alcanza aproximadamente.
 		      \end{enumerate}
-
-
 	\end{enumerate}
 	\begin{solution}
 		\begin{enumerate}[a)]
 			\item
+			      \begin{math}
+				      {\left\|A\right\|}_{\infty}=
+				      \max\limits_{1\leq i\leq 2}
+				      \left\{
+				      \sum\limits_{j=1}^{2}\left|a_{ij}\right|
+				      \right\}=
+				      \max\left\{\left(\left|1\right|+\left|2\right|,\left|3\right|+\left|4\right|\right)\right\}=
+				      7
+			      \end{math}.
+			      Si
+			      \begin{math}
+				      A^{-1}=
+				      \begin{pmatrix}
+					      -2  & 1    \\
+					      1.5 & -0.5
+				      \end{pmatrix}
+			      \end{math},
+			      entonces
 
-			      .
+			      \begin{math}
+				      {\left\|A^{-1}\right\|}_{\infty}=
+				      \max\left\{\left(\left|-2\right|+\left|1\right|,\left|1.5\right|+\left|-0.5\right|\right)\right\}=
+				      3
+			      \end{math}.
+			      Por lo tanto,
+			      \begin{math}
+				      \operatorname{Cond}\left(A\right)=
+				      7\times3=
+				      21.
+			      \end{math}
 
 			\item
 
-			      .
+			      Sean
+			      \begin{math}
+				      b
+				      =
+				      \begin{pmatrix}
+					      1 \\
+					      -1
+				      \end{pmatrix}
+			      \end{math},
+			      \begin{math}
+				      Ax=
+				      \begin{pmatrix}
+					      1 & 2 \\
+					      3 & 4
+				      \end{pmatrix}
+				      \begin{pmatrix}
+					      x_{1} \\
+					      x_{2}
+				      \end{pmatrix}
+				      =
+				      \begin{pmatrix}
+					      1 \\
+					      -1
+				      \end{pmatrix}
+				      \begin{pmatrix}
+					      x_{1} \\
+					      x_{2}
+				      \end{pmatrix}
+				      =
+				      \begin{pmatrix}
+					      -3 \\
+					      2
+				      \end{pmatrix}
+			      \end{math}.
 
-			\item
+			      \begin{math}
+				      b+\delta b =
+				      \begin{pmatrix}
+					      1.1 \\
+					      -1
+				      \end{pmatrix}
+			      \end{math}.
 
-			      .
+			      \begin{math}
+				      x+\delta x =
+				      \begin{pmatrix}
+					      -3.2 \\
+					      2.15
+				      \end{pmatrix}
+			      \end{math}
+
+			      \begin{math}
+				      \frac{{\left\|\Delta b\right\|}_{\infty}}{{\left\|b\right\|}_{\infty}}=
+				      0.1
+				      \frac{{\left\|\Delta x\right\|}_{\infty}}{{\left\|x\right\|}_{\infty}}=
+				      0.06
+			      \end{math}.
+
+			      \begin{math}
+				      \operatorname{Cond}\left(A\right)>\frac{0.06}{0.1}=0.6
+			      \end{math}
 		\end{enumerate}
 	\end{solution}
 \end{frame}

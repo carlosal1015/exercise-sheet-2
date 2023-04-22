@@ -80,7 +80,7 @@
 	\end{solution}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]
 	\begin{solution}
 		De esto notamos que la sucesión
 		\begin{math}
@@ -88,31 +88,63 @@
 		\end{math}
 		es \alert{divergente}, es decir,
 		\begin{align*}
-			I_{1} & =
-			\frac{1}{1}-
-			5I_{0}=
-			1-
-			5\ln\left(\frac{6}{5}\right).
-			I_{2} & =
-			\frac{1}{2}-
+			I_{\alert{1}}     & =
+			\frac{1}{\alert{1}}-
+			5I_{0}.                                  \\
+			I_{\alert{2}}     & =
+			\frac{1}{\alert{2}}-
 			5I_{1}=
 			\frac{1}{2}-
-			5\left(1-5\ln\left(\frac{6}{5}\right)\right).
+			5\left(1-5I_{0}\right)=
+			\frac{1}{2}-
+			5+5^{\alert{2}}I_{0}.                    \\
+			I_{\alert{3}}     & =
+			\frac{1}{\alert{3}}-
+			5I_{2}=
+			\frac{1}{3}-
+			5\left(\frac{1}{2}-
+			5+5^{2}I_{0}\right)=
+			\frac{1}{3}-
+			\frac{5}{2}+5^{2}-5^{\alert{3}}I_{0}.    \\
+			\vdots\phantom{0} & =  \phantom{0}\vdots \\
+			I_{\alert{n}}     & \to
+			\infty\text{ cuando }n\to\infty.
 		\end{align*}
-		Si perturbamos la sucesión $I_{k}$ por
-		\begin{math}
-			\widehat{I}_{k}=
-			I_{k}+
-			\epsilon_{k}
-		\end{math},
-		entonces
-		\begin{align*}
-			\widehat{I}_{k+1} & =
-			\frac{1}{k+1}-5\left(I_{k}+\epsilon_{k}\right) \\
-			\widehat{I}_{k+1} & =
-			I_{k+1}+
-			\epsilon_{k+1}                                 \\
-		\end{align*}
+
+		\footnotesize
+		\centering
+		\begin{verbatim}
+I(0) = 0.1823215567939546
+I(1) = 1.911607783969773
+I(2) = 10.058038919848865
+I(3) = 50.623527932577666
+I(4) = 253.36763966288834
+I(5) = 1267.0381983144418
+I(6) = 6335.357658238876
+I(7) = 31676.93114833724
+I(8) = 158384.7807416862
+I(9) = 791924.0148195422
+I(10) = 3959620.1740977108
+I(11) = 19798100.961397644
+I(12) = 98990504.89032155
+I(13) = 494952524.52853084
+I(14) = 2474762622.714083
+I(15) = 12373813113.637083
+		\end{verbatim}
+		% 	Si perturbamos la sucesión $I_{k}$ por
+		% 	\begin{math}
+		% 		\widehat{I}_{k}=
+		% 		I_{k}+
+		% 		\epsilon_{k}
+		% 	\end{math},
+		% 	entonces
+		% 	\begin{align*}
+		% 		\widehat{I}_{k+1} & =
+		% 		\frac{1}{k+1}-5\left(I_{k}+\epsilon_{k}\right) \\
+		% 		\widehat{I}_{k+1} & =
+		% 		I_{k+1}+
+		% 		\epsilon_{k+1}                                 \\
+		% 	\end{align*}
 	\end{solution}
 \end{frame}
 
